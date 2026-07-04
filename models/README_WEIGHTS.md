@@ -11,7 +11,9 @@ folder:
 | `hyperprior_l{0.002,0.01,0.05}.pth` | 20 MB each | Scale-hyperprior codec, three rates |
 | `clinical_encoder.pth`, `clinical_decoder.pth` | ~8 MB each | Auxiliary reconstruction models |
 
-**Download:** <ADD ZENODO DOI OR RELEASE LINK HERE>
+**Download:** https://github.com/Dayasagar77/Triage-from-compressed-latent/releases
+
+Grab the `.pth` files attached to the latest release and drop them into this `models/` folder.
 
 All weights can also be regenerated from scratch with the training scripts
 (`train.py`, `train_compression_v2.py`, `train_hyperprior_pure.py`).
