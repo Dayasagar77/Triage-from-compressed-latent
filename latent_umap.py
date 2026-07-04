@@ -1,5 +1,5 @@
 """
-latent_umap.py — interpretability of the ~5KB compressed latent (reviewer request).
+latent_umap.py — interpretability of the ~5KB compressed latent.
 Encodes BreakHis with the v2 codec, global-average-pools each 14x14xM latent to an
 M-vector, projects to 2-D (UMAP if available, else t-SNE), and plots three panels:
 benign/malignant, 8 subtypes, and magnification. Also reports the silhouette score of

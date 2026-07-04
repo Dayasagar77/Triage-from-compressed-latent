@@ -2,7 +2,7 @@
 """
 Promote-only priority-queue simulation for latent triage (paper Section 5.5).
 
-Question (reviewer comment A): under a promote-only scheduler, the latent stage
+Question: under a promote-only scheduler, the latent stage
 falsely promotes benign cases (specificity 0.6707 -> 32.93% of benign go to the
 fast path) and misses some malignant cases (sensitivity 0.8919 -> 10.81% of
 malignant fall to the FIFO low-priority queue). Does the false-positive load on
@@ -151,7 +151,7 @@ for rho in [0.3,0.5,0.7,0.9]:
           f"ratio(missed/fifo)={row['ratio_missedmal_to_fifo']}")
 
 out=dict(
-  description="Promote-only non-preemptive M/D/1 priority-queue SIMULATION (reviewer comment A). "
+  description="Promote-only non-preemptive M/D/1 priority-queue SIMULATION. "
               "HIGH=promoted (true+false positives), LOW=not promoted (incl. missed malignant).",
   parameters=dict(sensitivity_r=R_SENS, specificity=SPEC, malignant_fraction=P_MAL,
                   service_time_s=round(D,4), frac_promoted=round(fh,4),

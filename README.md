@@ -21,7 +21,7 @@ theone/                  The ONE (DTN simulator) configuration files (Table 12)
 results/*.json           machine-readable results (every reported number)
 results/figures/*.png    generated figures
 models/                  place trained weights here (see models/README_WEIGHTS.md)
-paper/                   final manuscript PDF + response-to-reviewer letter
+paper/                   final manuscript PDF
 ```
 
 ## Setup

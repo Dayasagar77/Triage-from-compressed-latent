@@ -1,5 +1,5 @@
 """
-triage_from_hyperprior_latent.py — reviewer comment C.
+triage_from_hyperprior_latent.py — triage from the scale-hyperprior latent.
 Report benign/malignant TRIAGE accuracy read directly from the *hyperprior* codec's
 latent (models/hyperprior_l0.01.pth), under the identical patient-wise protocol used for
 the v2 FactorizedCodec latent (emit_latent_confusion.py). Lets us state whether the

@@ -1,6 +1,6 @@
 """
 edge_latency.py — measure encoder inference latency to ground the edge-compute discussion
-(reviewer: ResNet-50 dominates; is v2 really 'cheaper at the edge'?). Reports parameter
+(the ResNet-50 dominates edge compute; is the lightweight codec really 'cheaper at the edge'?). Reports parameter
 counts and ms/patch for the source classifier (CancerNet), the v2 codec encoder, and the
 hyperprior encoder, on GPU and CPU (CPU is the honest edge proxy).
 

@@ -1,5 +1,5 @@
 # The ONE settings for a rural telepathology DTN scenario.
-# Purpose (reviewer comment C): obtain WIRE-LEVEL Bundle-Protocol overhead / delivery /
+# Purpose: obtain WIRE-LEVEL Bundle-Protocol overhead / delivery /
 # latency for Epidemic, PRoPHET, and a single-custody router, to replace the
 # application-layer rho-fraction abstraction in the paper's Table 11.
 # Run:  ./one.sh -b 1 theone/telepathology_settings.txt   (download The ONE first, see README)

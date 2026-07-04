@@ -1,5 +1,5 @@
 """
-finetune_bach_imbalanced.py — reviewer weakness D: real-world domain adaptation rarely has
+finetune_bach_imbalanced.py — real-world domain adaptation rarely has
 balanced classes. Repeats the BACH fine-tuning but with an IMBALANCED fine-tune set
 (default 75 benign / 25 malignant, reflecting a benign-heavy screening prevalence), while
 evaluating on the SAME fixed BALANCED held-out test set so results are comparable to the

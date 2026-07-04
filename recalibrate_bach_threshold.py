@@ -1,5 +1,5 @@
 """
-recalibrate_bach_threshold.py — reviewer minor 3.
+recalibrate_bach_threshold.py — zero-shot BACH threshold recalibration.
 Re-runs the ZERO-SHOT BACH inference (no fitting) exactly like eval_external_bach.py, but
 saves the per-image malignancy score and finds the decision threshold that maximizes
 BALANCED ACCURACY (the Youden-optimal operating point). Reports the recalibrated threshold

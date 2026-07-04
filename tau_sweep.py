@@ -1,5 +1,5 @@
 """
-tau_sweep.py — reviewer Q2: empirically find the promotion threshold τ that balances
+tau_sweep.py — empirically find the promotion threshold τ that balances
 malignant sensitivity against fast-path queue load. Trains the latent triage head
 (same patient-wise protocol as emit_latent_confusion.py), pools per-sample malignant
 probabilities, then sweeps τ: for each τ it computes the promoted fraction, malignant

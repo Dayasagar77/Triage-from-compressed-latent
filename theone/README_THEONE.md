@@ -1,4 +1,4 @@
-# Wire-level DTN check with The ONE (reviewer comment C)
+# Wire-level DTN check with The ONE
 
 Goal: replace the paper's application-layer overhead abstraction (Table 11, rho-fraction of
 payload) with empirical Bundle-Protocol overhead/delivery/latency for Epidemic, PRoPHET, and a
@@ -27,4 +27,4 @@ Send me the three MessageStatsReport files and I will build the empirical table 
 Section 5.4 to report measured overhead instead of modelled rho fractions.
 
 Note: The ONE models the Bundle Protocol layer (custody, replication, TTL, buffers) but is a
-network simulator, not a testbed; it is the standard tool your reviewer asked for.
+network simulator, not a testbed; it is the standard tool for DTN evaluation.

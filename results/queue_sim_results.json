@@ -1,5 +1,5 @@
 {
-  "description": "Promote-only non-preemptive M/D/1 priority-queue SIMULATION (reviewer comment A). HIGH=promoted (true+false positives), LOW=not promoted (incl. missed malignant).",
+  "description": "Promote-only non-preemptive M/D/1 priority-queue SIMULATION. HIGH=promoted (true+false positives), LOW=not promoted (incl. missed malignant).",
   "parameters": {
     "sensitivity_r": 0.8919,
     "specificity": 0.6707,

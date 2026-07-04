@@ -1,5 +1,5 @@
 """
-bach_stain_macenko.py — reviewer W4: does cheap Macenko stain normalization recover any of
+bach_stain_macenko.py — tests whether cheap Macenko stain normalization recovers any of
 the BACH zero-shot gap? Applies standard Macenko normalization to each BACH image (to a
 canonical H&E target), then runs the SAME zero-shot BreakHis-trained classifier
 (eval_external_bach.py protocol) and reports benign/malignant metrics with vs without
