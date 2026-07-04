@@ -1,5 +1,5 @@
 """
-latent_umap.py — interpretability of the ~5KB compressed latent.
+latent_umap.py — interpretability of the ~5KB compressed latent (reviewer request).
 Encodes BreakHis with the v2 codec, global-average-pools each 14x14xM latent to an
 M-vector, projects to 2-D (UMAP if available, else t-SNE), and plots three panels:
 benign/malignant, 8 subtypes, and magnification. Also reports the silhouette score of
@@ -7,7 +7,7 @@ the benign/malignant split in latent space (a number for 'does the latent cluste
 morphology?'). If clusters follow magnification/stain more than class, that supports the
 BACH domain-shift hypothesis.
 
-Run:  python latent_umap.py --data "path/to/BreakHis_8class" --codec-lambda 0.01
+Run:  python latent_umap.py --data "D:/DAYA PHD/PHD WORK/Journal paper 3/BreakHis_8class" --codec-lambda 0.01
 Output: results/figures/fig_latent_umap.png , results/latent_umap.json   (send me the json)
 """
 import argparse, os, json, re
@@ -75,7 +75,7 @@ def main():
         m=mags==mg; ax[2].scatter(Z[m,0],Z[m,1],s=6,alpha=0.5,label=mg)
     ax[2].set_title(f"Magnification (silhouette={sil_mag:.3f})" if sil_mag else "Magnification"); ax[2].legend()
     for a_ in ax: a_.set_xticks([]); a_.set_yticks([])
-    plt.suptitle(f"v2 latent ({method} projection, n={len(X)})")
+    plt.suptitle(f"Factorized-prior latent ({method} projection, n={len(X)})")
     plt.tight_layout(); plt.savefig("results/figures/fig_latent_umap.png",dpi=140); 
     out={"method":method,"n":len(X),"latent_dim_pooled":X.shape[1],
          "silhouette_benign_malignant":round(sil_bm,4),
