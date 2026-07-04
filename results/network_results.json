@@ -1,0 +1,29 @@
+{
+  "n_images": 200,
+  "condition": "Delayed",
+  "base_speed_kbps": 500.0,
+  "transmission_success_rate_pct": 100.0,
+  "avg_throughput_kbps": 260.39,
+  "avg_latency_s": 1.71,
+  "compression_savings_pct": 90.66,
+  "avg_original_kb": 524.8,
+  "avg_compressed_kb": 49.0,
+  "protocol_comparison": {
+    "TCP_IP": {
+      "delivery_ratio_pct": 100.0,
+      "avg_overhead_kb": 2.5
+    },
+    "Epidemic": {
+      "delivery_ratio_pct": 100.0,
+      "avg_overhead_kb": 200.9
+    },
+    "PRoPHET": {
+      "delivery_ratio_pct": 100.0,
+      "avg_overhead_kb": 52.4
+    },
+    "Neural_DTN": {
+      "delivery_ratio_pct": 100.0,
+      "avg_overhead_kb": 1.0
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "dataset": "BACH ICIAR-2018 (zero-shot, threshold recalibration)",
+  "n": 400,
+  "auc": 0.6516,
+  "default_threshold_0.5": {
+    "balanced_accuracy": 0.58,
+    "sensitivity": 0.88,
+    "specificity": 0.28
+  },
+  "recalibrated": {
+    "threshold": 0.9999,
+    "balanced_accuracy": 0.61,
+    "sensitivity": 0.34,
+    "specificity": 0.88
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "dataset": "BACH ICIAR-2018 (imbalanced fine-tune)",
+  "train_benign": 75,
+  "train_malignant": 25,
+  "n_test_balanced": 250,
+  "class_weighted_loss": true,
+  "zero_shot": {
+    "accuracy": 0.592,
+    "sensitivity": 0.888,
+    "specificity": 0.296,
+    "auc": 0.6492,
+    "balanced_accuracy": 0.592,
+    "confusion": {
+      "tp": 111,
+      "tn": 37,
+      "fp": 88,
+      "fn": 14
+    }
+  },
+  "fine_tuned_imbalanced": {
+    "accuracy": 0.776,
+    "sensitivity": 0.608,
+    "specificity": 0.944,
+    "auc": 0.866,
+    "balanced_accuracy": 0.776,
+    "confusion": {
+      "tp": 76,
+      "tn": 118,
+      "fp": 7,
+      "fn": 49
+    }
+  },
+  "compare_balanced_5050": {
+    "accuracy": 0.8133,
+    "sensitivity": 0.9,
+    "specificity": 0.7267,
+    "auc": 0.9125
+  }
+}

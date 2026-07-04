@@ -1,0 +1,23 @@
+# Public datasets — download separately (see README)
+BreakHis_8class/
+BACH/
+archive/
+*.tif
+*.tiff
+
+# Trained weights — hosted externally (see models/README_WEIGHTS.md)
+models/*.pth
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / office lock & temp files
+.~lock.*
+*.tmp
+.DS_Store
+Thumbs.db

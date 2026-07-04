@@ -1,0 +1,22 @@
+{
+  "curve": [
+    {
+      "lambda": 0.002,
+      "kb": 2.78,
+      "binary_acc_mean": 0.806,
+      "binary_acc_std": 0.037
+    },
+    {
+      "lambda": 0.01,
+      "kb": 4.88,
+      "binary_acc_mean": 0.819,
+      "binary_acc_std": 0.037
+    },
+    {
+      "lambda": 0.05,
+      "kb": 8.43,
+      "binary_acc_mean": 0.815,
+      "binary_acc_std": 0.034
+    }
+  ]
+}

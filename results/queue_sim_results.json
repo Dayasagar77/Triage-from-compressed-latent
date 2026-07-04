@@ -1,0 +1,64 @@
+{
+  "description": "Promote-only non-preemptive M/D/1 priority-queue SIMULATION (reviewer comment A). HIGH=promoted (true+false positives), LOW=not promoted (incl. missed malignant).",
+  "parameters": {
+    "sensitivity_r": 0.8919,
+    "specificity": 0.6707,
+    "malignant_fraction": 0.664,
+    "service_time_s": 0.784,
+    "frac_promoted": 0.7029,
+    "service": "deterministic (M/D/1)",
+    "arrivals": "Poisson",
+    "seed": 20260704,
+    "sources": "latent_confusion.json (r,spec); triage_results.json (p_mal); 49KB@500kbps (D)"
+  },
+  "rows": [
+    {
+      "rho": 0.3,
+      "frac_promoted": 0.7029,
+      "W_high_theory": 0.149,
+      "W_high_sim": 0.1481,
+      "W_low_theory": 0.2129,
+      "W_low_sim": 0.2123,
+      "W_missed_malignant_sim": 0.2112,
+      "W_fifo_baseline_theory": 0.168,
+      "W_fifo_baseline_sim": 0.1671,
+      "ratio_missedmal_to_fifo": 1.264
+    },
+    {
+      "rho": 0.5,
+      "frac_promoted": 0.7029,
+      "W_high_theory": 0.3022,
+      "W_high_sim": 0.3014,
+      "W_low_theory": 0.6044,
+      "W_low_sim": 0.5993,
+      "W_missed_malignant_sim": 0.5946,
+      "W_fifo_baseline_theory": 0.392,
+      "W_fifo_baseline_sim": 0.3908,
+      "ratio_missedmal_to_fifo": 1.521
+    },
+    {
+      "rho": 0.7,
+      "frac_promoted": 0.7029,
+      "W_high_theory": 0.5402,
+      "W_high_sim": 0.5359,
+      "W_low_theory": 1.8005,
+      "W_low_sim": 1.7726,
+      "W_missed_malignant_sim": 1.7631,
+      "W_fifo_baseline_theory": 0.9147,
+      "W_fifo_baseline_sim": 0.9176,
+      "ratio_missedmal_to_fifo": 1.921
+    },
+    {
+      "rho": 0.9,
+      "frac_promoted": 0.7029,
+      "W_high_theory": 0.9602,
+      "W_high_sim": 0.9523,
+      "W_low_theory": 9.6021,
+      "W_low_sim": 9.4117,
+      "W_missed_malignant_sim": 9.3176,
+      "W_fifo_baseline_theory": 3.528,
+      "W_fifo_baseline_sim": 3.5779,
+      "ratio_missedmal_to_fifo": 2.604
+    }
+  ]
+}

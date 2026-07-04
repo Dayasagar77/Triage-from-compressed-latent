@@ -1,0 +1,86 @@
+{
+  "payload_MB": 50.0,
+  "num_bundles": 10000,
+  "bundle_kb": 5.12,
+  "note": "application-layer abstraction; overhead = replication + assumed control fraction, not measured BP/custody/LTP bytes",
+  "conditions": {
+    "Real-Time": {
+      "TCP_IP": {
+        "delivery_pct": 0.2,
+        "completion_slots": 18,
+        "overhead_kb": 2560.0,
+        "delivered_bundles": 17
+      },
+      "Epidemic": {
+        "delivery_pct": 100.0,
+        "completion_slots": 10180,
+        "overhead_kb": 209920.0,
+        "delivered_bundles": 10000
+      },
+      "PRoPHET": {
+        "delivery_pct": 100.0,
+        "completion_slots": 10180,
+        "overhead_kb": 54784.0,
+        "delivered_bundles": 10000
+      },
+      "Neural_Codec_DTN": {
+        "delivery_pct": 100.0,
+        "completion_slots": 10180,
+        "overhead_kb": 1024.0,
+        "delivered_bundles": 10000
+      }
+    },
+    "Delayed": {
+      "TCP_IP": {
+        "delivery_pct": 0.0,
+        "completion_slots": 7,
+        "overhead_kb": 2560.0,
+        "delivered_bundles": 4
+      },
+      "Epidemic": {
+        "delivery_pct": 100.0,
+        "completion_slots": 14240,
+        "overhead_kb": 209920.0,
+        "delivered_bundles": 10000
+      },
+      "PRoPHET": {
+        "delivery_pct": 100.0,
+        "completion_slots": 14240,
+        "overhead_kb": 54784.0,
+        "delivered_bundles": 10000
+      },
+      "Neural_Codec_DTN": {
+        "delivery_pct": 100.0,
+        "completion_slots": 14240,
+        "overhead_kb": 1024.0,
+        "delivered_bundles": 10000
+      }
+    },
+    "Extreme": {
+      "TCP_IP": {
+        "delivery_pct": 0.0,
+        "completion_slots": 5,
+        "overhead_kb": 2560.0,
+        "delivered_bundles": 1
+      },
+      "Epidemic": {
+        "delivery_pct": 100.0,
+        "completion_slots": 33529,
+        "overhead_kb": 209920.0,
+        "delivered_bundles": 10000
+      },
+      "PRoPHET": {
+        "delivery_pct": 100.0,
+        "completion_slots": 33529,
+        "overhead_kb": 54784.0,
+        "delivered_bundles": 10000
+      },
+      "Neural_Codec_DTN": {
+        "delivery_pct": 100.0,
+        "completion_slots": 33529,
+        "overhead_kb": 1024.0,
+        "delivered_bundles": 10000
+      }
+    }
+  }
+}

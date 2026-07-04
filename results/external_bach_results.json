@@ -1,0 +1,14 @@
+{
+  "dataset": "BACH ICIAR-2018 (external, inference only)",
+  "n": 400,
+  "binary_accuracy": 0.58,
+  "sensitivity": 0.88,
+  "specificity": 0.28,
+  "auc": 0.6516,
+  "confusion": {
+    "tp": 176,
+    "tn": 56,
+    "fp": 144,
+    "fn": 24
+  }
+}

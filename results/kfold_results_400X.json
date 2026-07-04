@@ -1,0 +1,48 @@
+{
+  "per_fold": [
+    {
+      "accuracy": 0.4854961832061069,
+      "macro_f1": 0.3060862845385638,
+      "binary_accuracy": 0.8717557251908397
+    },
+    {
+      "accuracy": 0.4548736462093863,
+      "macro_f1": 0.29715871044181563,
+      "binary_accuracy": 0.7906137184115524
+    },
+    {
+      "accuracy": 0.4577702702702703,
+      "macro_f1": 0.2965511749479086,
+      "binary_accuracy": 0.8125
+    },
+    {
+      "accuracy": 0.41867954911433175,
+      "macro_f1": 0.33341817652000993,
+      "binary_accuracy": 0.822866344605475
+    },
+    {
+      "accuracy": 0.45327754532775455,
+      "macro_f1": 0.2954133674350915,
+      "binary_accuracy": 0.8563458856345886
+    }
+  ],
+  "summary": {
+    "accuracy_mean": 0.45401943882556994,
+    "accuracy_std": 0.02123695860684087,
+    "macro_f1_mean": 0.3057255427766779,
+    "macro_f1_std": 0.014359057767471524,
+    "binary_accuracy_mean": 0.8308163347684913,
+    "binary_accuracy_std": 0.029471112908965043
+  },
+  "classes": [
+    "Adenosis",
+    "Carcinoma",
+    "Fibroadenoma",
+    "Lobular Carcinoma",
+    "Mucinous Carcinoma",
+    "Papillary Carcinoma",
+    "Phyllodes Tumor",
+    "Tubular Adenoma"
+  ],
+  "protocol": "official patient-wise folds (Folds.csv, mag=400)"
+}

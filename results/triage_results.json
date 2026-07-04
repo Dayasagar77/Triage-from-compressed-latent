@@ -1,0 +1,17 @@
+{
+  "batch_size": 20,
+  "trials": 50,
+  "speed_kbps": 500.0,
+  "avg_malignant_fraction": 0.664,
+  "malignant_delivery_time_fifo_s": {
+    "mean": 1.026,
+    "std": 0.079
+  },
+  "malignant_delivery_time_priority_s": {
+    "mean": 0.7,
+    "std": 0.1
+  },
+  "malignant_delay_reduction_pct": 31.8,
+  "overall_delivery_time_fifo_s": 1.029,
+  "overall_delivery_time_priority_s": 1.029
+}

@@ -1,0 +1,8 @@
+{
+  "method": "UMAP",
+  "n": 4000,
+  "latent_dim_pooled": 192,
+  "silhouette_benign_malignant": 0.0807,
+  "silhouette_magnification": -0.0205,
+  "interpretation": "higher B/M silhouette than magnification silhouette => latent clusters by morphology more than by scanner/stain proxy"
+}

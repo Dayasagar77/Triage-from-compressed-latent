@@ -1,0 +1,8 @@
+{
+  "model": "hierarchical (binary -> subtype)",
+  "folds": 5,
+  "accuracy_mean": 0.4767,
+  "accuracy_std": 0.0316,
+  "macro_f1_mean": 0.3321,
+  "macro_f1_std": 0.0254
+}

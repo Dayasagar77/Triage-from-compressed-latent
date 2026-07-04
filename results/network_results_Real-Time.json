@@ -1,0 +1,35 @@
+{
+  "condition": "Real-Time",
+  "base_speed_kbps": 500.0,
+  "n_images": 200,
+  "transmission_success_rate_pct": 100.0,
+  "avg_throughput_kbps": 374.61,
+  "avg_latency_s": 0.14,
+  "compression_savings_pct": 90.66,
+  "avg_original_kb": 524.8,
+  "avg_compressed_kb": 49.0,
+  "protocol_comparison_compressed": {
+    "TCP_IP": {
+      "delivery_ratio_pct": 100.0,
+      "avg_overhead_kb": 2.5
+    },
+    "Epidemic": {
+      "delivery_ratio_pct": 100.0,
+      "avg_overhead_kb": 200.9
+    },
+    "PRoPHET": {
+      "delivery_ratio_pct": 100.0,
+      "avg_overhead_kb": 52.4
+    },
+    "Neural_DTN": {
+      "delivery_ratio_pct": 100.0,
+      "avg_overhead_kb": 1.0
+    }
+  },
+  "protocol_delivery_large_multibundle_pct": {
+    "TCP_IP": 85.0,
+    "Epidemic": 100.0,
+    "PRoPHET": 100.0,
+    "Neural_DTN": 100.0
+  }
+}

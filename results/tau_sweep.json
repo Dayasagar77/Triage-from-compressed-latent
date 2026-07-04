@@ -1,0 +1,50 @@
+{
+  "rho": 0.6,
+  "service_s": 0.784,
+  "rows": [
+    {
+      "tau": 0.5,
+      "promoted_fraction": 0.7068,
+      "sensitivity": 0.901,
+      "specificity": 0.6866,
+      "missed_malignant_delay_s": 1.021
+    },
+    {
+      "tau": 0.6,
+      "promoted_fraction": 0.6679,
+      "sensitivity": 0.8663,
+      "specificity": 0.7342,
+      "missed_malignant_delay_s": 0.9812
+    },
+    {
+      "tau": 0.7,
+      "promoted_fraction": 0.6235,
+      "sensitivity": 0.8232,
+      "specificity": 0.7812,
+      "missed_malignant_delay_s": 0.9394
+    },
+    {
+      "tau": 0.8,
+      "promoted_fraction": 0.5614,
+      "sensitivity": 0.7555,
+      "specificity": 0.8321,
+      "missed_malignant_delay_s": 0.8866
+    },
+    {
+      "tau": 0.9,
+      "promoted_fraction": 0.4546,
+      "sensitivity": 0.6257,
+      "specificity": 0.8921,
+      "missed_malignant_delay_s": 0.8085
+    },
+    {
+      "tau": 0.95,
+      "promoted_fraction": 0.3527,
+      "sensitivity": 0.4962,
+      "specificity": 0.9382,
+      "missed_malignant_delay_s": 0.7458
+    }
+  ],
+  "suggested_tau": 0.6,
+  "note": "promoted_fraction feeds Cobham M/D/1; higher tau lowers fast-path load but reduces captured sensitivity"
+}

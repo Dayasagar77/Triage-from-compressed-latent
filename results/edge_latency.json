@@ -1,0 +1,26 @@
+{
+  "note": "ms per 224x224 patch, batch=1; CPU is the edge proxy",
+  "models": {
+    "CancerNet_ResNet50_SE": {
+      "params_millions": 27.13,
+      "cuda_ms_mean": 7.04,
+      "cuda_ms_std": 3.36,
+      "cpu_ms_mean": 57.96,
+      "cpu_ms_std": 0.82
+    },
+    "v2_encoder": {
+      "params_millions": 2.99,
+      "cuda_ms_mean": 1.06,
+      "cuda_ms_std": 0.06,
+      "cpu_ms_mean": 13.29,
+      "cpu_ms_std": 0.16
+    },
+    "hyperprior_encoder": {
+      "params_millions": 5.07,
+      "cuda_ms_mean": 1.15,
+      "cuda_ms_std": 0.24,
+      "cpu_ms_mean": 13.2,
+      "cpu_ms_std": 0.14
+    }
+  }
+}

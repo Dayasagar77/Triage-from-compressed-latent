@@ -1,0 +1,10 @@
+{
+  "simulator": "The ONE (Opportunistic Network Environment)",
+  "scenario": "22 nodes (1 clinic, 20 relays, 1 centre), RandomWaypoint 1000x1000 m, range 150 m, 49 KB messages, 12 h, msgTTL 720 min",
+  "metric_note": "overhead_ratio = (relayed - delivered)/delivered (wire-level replication, incl. per-hop relaying)",
+  "routers": {
+    "Epidemic":        {"delivery_prob": 1.00, "overhead_ratio": 20.00, "latency_avg_s": 91.9,  "relayed": 2058, "delivered": 98},
+    "PRoPHET":         {"delivery_prob": 1.00, "overhead_ratio": 19.95, "latency_avg_s": 121.4, "relayed": 2053, "delivered": 98},
+    "Single-custody":  {"delivery_prob": 1.00, "overhead_ratio": 10.82, "latency_avg_s": 485.6, "relayed": 1158, "delivered": 98}
+  }
+}

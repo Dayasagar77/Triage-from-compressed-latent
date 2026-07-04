@@ -1,0 +1,31 @@
+{
+  "dataset": "BACH ICIAR-2018 zero-shot",
+  "n": 400,
+  "raw": {
+    "accuracy": 0.58,
+    "sensitivity": 0.88,
+    "specificity": 0.28,
+    "balanced_accuracy": 0.58,
+    "auc": 0.6516,
+    "confusion": {
+      "tp": 176,
+      "tn": 56,
+      "fp": 144,
+      "fn": 24
+    }
+  },
+  "macenko_normalized": {
+    "accuracy": 0.5375,
+    "sensitivity": 0.72,
+    "specificity": 0.355,
+    "balanced_accuracy": 0.5375,
+    "auc": 0.5367,
+    "confusion": {
+      "tp": 144,
+      "tn": 71,
+      "fp": 129,
+      "fn": 56
+    }
+  },
+  "note": "if macenko balanced_accuracy > raw, part of the shift is color variance"
+}

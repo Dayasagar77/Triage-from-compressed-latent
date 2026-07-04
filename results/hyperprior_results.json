@@ -1,0 +1,25 @@
+{
+  "resolution": "224x224",
+  "model": "scale-hyperprior (pure PyTorch), estimated-bpp rate",
+  "rate_note": "bytes = entropy-model bits / 8 (matched to our v2 codec)",
+  "points": {
+    "0.002": {
+      "avg_bytes": 972.5,
+      "avg_kb": 0.95,
+      "avg_psnr": 25.45,
+      "avg_ssim": 0.625
+    },
+    "0.01": {
+      "avg_bytes": 3642.8,
+      "avg_kb": 3.56,
+      "avg_psnr": 30.75,
+      "avg_ssim": 0.9003
+    },
+    "0.05": {
+      "avg_bytes": 8195.5,
+      "avg_kb": 8.0,
+      "avg_psnr": 34.11,
+      "avg_ssim": 0.9587
+    }
+  }
+}

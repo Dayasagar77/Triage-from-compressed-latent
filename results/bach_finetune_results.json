@@ -1,0 +1,30 @@
+{
+  "dataset": "BACH ICIAR-2018",
+  "train_per_class": 50,
+  "n_train": 100,
+  "n_test": 300,
+  "zero_shot": {
+    "accuracy": 0.58,
+    "sensitivity": 0.8867,
+    "specificity": 0.2733,
+    "auc": 0.6379,
+    "confusion": {
+      "tp": 133,
+      "tn": 41,
+      "fp": 109,
+      "fn": 17
+    }
+  },
+  "fine_tuned": {
+    "accuracy": 0.8133,
+    "sensitivity": 0.9,
+    "specificity": 0.7267,
+    "auc": 0.9125,
+    "confusion": {
+      "tp": 135,
+      "tn": 109,
+      "fp": 41,
+      "fn": 15
+    }
+  }
+}

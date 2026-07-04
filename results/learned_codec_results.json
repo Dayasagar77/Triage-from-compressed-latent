@@ -1,0 +1,25 @@
+{
+  "resolution": "224x224",
+  "model": "FactorizedCodec (GDN + factorized entropy), rate-distortion trained",
+  "rate_note": "bytes = entropy-model bits / 8 (near-optimal arithmetic-coding rate)",
+  "points": {
+    "0.002": {
+      "avg_bytes": 2844.2,
+      "avg_kb": 2.78,
+      "avg_psnr": 22.91,
+      "avg_ssim": 0.6577
+    },
+    "0.01": {
+      "avg_bytes": 4996.2,
+      "avg_kb": 4.88,
+      "avg_psnr": 27.24,
+      "avg_ssim": 0.8592
+    },
+    "0.05": {
+      "avg_bytes": 8632.7,
+      "avg_kb": 8.43,
+      "avg_psnr": 30.83,
+      "avg_ssim": 0.9191
+    }
+  }
+}

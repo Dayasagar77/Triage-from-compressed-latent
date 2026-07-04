@@ -1,0 +1,65 @@
+# The ONE settings for a rural telepathology DTN scenario.
+# Purpose (reviewer comment C): obtain WIRE-LEVEL Bundle-Protocol overhead / delivery /
+# latency for Epidemic, PRoPHET, and a single-custody router, to replace the
+# application-layer rho-fraction abstraction in the paper's Table 11.
+# Run:  ./one.sh -b 1 theone/telepathology_settings.txt   (download The ONE first, see README)
+
+Scenario.name = telepathology_dtn
+Scenario.simulateConnections = true
+Scenario.updateInterval = 1.0
+# 12 h of intermittent operation
+Scenario.endTime = 43200
+
+# --- One radio interface (short range -> intermittent contacts) ---
+btInterface.type = SimpleBroadcastInterface
+btInterface.transmitSpeed = 250k
+btInterface.transmitRange = 30
+
+# --- Three groups: clinic (source), courier/relay nodes, diagnostic centre (sink) ---
+Scenario.nrofHostGroups = 3
+Group.movementModel = RandomWaypoint
+Group.bufferSize = 50M
+Group.waitTime = 0, 120
+Group.speed = 0.5, 1.5
+Group.msgTtl = 720
+Group.nrofInterfaces = 1
+Group.interface1 = btInterface
+
+# clinic (source)
+Group1.groupID = clinic
+Group1.nrofHosts = 1
+# relays (couriers moving between clinic and centre -> create intermittent contacts)
+Group2.groupID = relay
+Group2.nrofHosts = 6
+# diagnostic centre (sink)
+Group3.groupID = centre
+Group3.nrofHosts = 1
+
+# --- Messages: ~49 KB compressed patches (match the paper's payload S) ---
+Events.nrof = 1
+Events1.class = MessageEventGenerator
+Events1.interval = 60, 120
+Events1.size = 49k
+Events1.hosts = 0, 0
+Events1.tohosts = 7, 7
+Events1.prefix = M
+
+# --- World (RandomWaypoint: no map file needed) ---
+MovementModel.rngSeed = 1
+MovementModel.worldSize = 4500, 3400
+
+# --- Reports: delivery ratio, overhead ratio, latency ---
+Report.nrofReports = 1
+Report.reportDir = reports/
+Report.report1 = MessageStatsReport
+
+# ================= SWEEP THE ROUTER (run once per value) =================
+# Neural-Codec DTN (single custody copy): SprayAndWait with 1 copy
+#   Group.router = SprayAndWaitRouter
+#   SprayAndWaitRouter.nrofCopies = 1
+#   SprayAndWaitRouter.binaryMode = true
+# PRoPHET:
+#   Group.router = ProphetRouter
+#   ProphetRouter.secondsInTimeUnit = 30
+# Epidemic (default above): 
+# routers: EpidemicRouter | ProphetRouter | SprayAndWaitRouter(nrofCopies=1)

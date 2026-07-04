@@ -1,0 +1,20 @@
+{
+  "codec": "ScaleHyperprior",
+  "codec_lambda": 0.01,
+  "latent_channels": 192,
+  "binary_accuracy": 0.8113,
+  "malignant_sensitivity_r": 0.8789,
+  "specificity": 0.6742,
+  "binary_auc": 0.8768,
+  "confusion": {
+    "tp": 8042,
+    "tn": 3044,
+    "fp": 1471,
+    "fn": 1108
+  },
+  "compare_v2_factorized": {
+    "binary_accuracy": 0.823,
+    "sensitivity_r": 0.8919,
+    "specificity": 0.6707
+  }
+}

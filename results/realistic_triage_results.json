@@ -1,0 +1,39 @@
+{
+  "t_fifo_s": 1.026,
+  "t_prio_s": 0.7,
+  "oracle_speedup_pct": 31.8,
+  "model": "E[t](r)=r*t_prio+(1-r)*t_fifo ; net_speedup = r * oracle_speedup",
+  "note": "r = latent malignant sensitivity; exact value needs the latent binary confusion matrix (future work).",
+  "sweep": [
+    {
+      "latent_sensitivity": 0.5,
+      "exp_malignant_delivery_s": 0.863,
+      "net_speedup_pct": 15.9
+    },
+    {
+      "latent_sensitivity": 0.6,
+      "exp_malignant_delivery_s": 0.83,
+      "net_speedup_pct": 19.1
+    },
+    {
+      "latent_sensitivity": 0.7,
+      "exp_malignant_delivery_s": 0.798,
+      "net_speedup_pct": 22.2
+    },
+    {
+      "latent_sensitivity": 0.8,
+      "exp_malignant_delivery_s": 0.765,
+      "net_speedup_pct": 25.4
+    },
+    {
+      "latent_sensitivity": 0.9,
+      "exp_malignant_delivery_s": 0.733,
+      "net_speedup_pct": 28.6
+    },
+    {
+      "latent_sensitivity": 1.0,
+      "exp_malignant_delivery_s": 0.7,
+      "net_speedup_pct": 31.8
+    }
+  ]
+}

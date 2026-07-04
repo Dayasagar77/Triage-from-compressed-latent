@@ -1,0 +1,13 @@
+{
+  "n_val": 1581,
+  "quality": 85,
+  "PSNR_dB_mean": 37.19,
+  "PSNR_dB_std": 3.7,
+  "SSIM_mean": 0.9808,
+  "SSIM_std": 0.0173,
+  "MSE_mean": 18.527951,
+  "MSE_std": 21.809811,
+  "compression_savings_vs_raw_pixels_pct": 66.66,
+  "compression_savings_vs_original_file_pct": 90.79,
+  "avg_latent_bytes": 50184.0
+}

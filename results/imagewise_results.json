@@ -1,0 +1,8 @@
+{
+  "protocol": "image-wise (generic stratified k-fold; leaky)",
+  "k": 5,
+  "accuracy_mean": 0.9503,
+  "accuracy_std": 0.0042,
+  "macro_f1_mean": 0.9484,
+  "binary_accuracy_mean": 0.9928
+}
