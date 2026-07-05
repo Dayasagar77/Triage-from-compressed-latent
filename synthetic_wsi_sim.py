@@ -36,7 +36,7 @@ def run_condition(cond, reliability, num_bundles, total_kb, seed=0):
       "TCP_IP":     simulate("TCP/IP",trace,num_bundles,total_kb,1,True,0.05),
       "Epidemic":   simulate("Epidemic",trace,num_bundles,total_kb,total_nodes,False,0.10),
       "PRoPHET":    simulate("PRoPHET",trace,num_bundles,total_kb,2,False,0.07),
-      "Neural_Codec_DTN": simulate("Neural-Codec DTN",trace,num_bundles,total_kb,1,False,0.02),
+      "Neural_Codec_DTN": simulate("Codec-Aware DTN",trace,num_bundles,total_kb,1,False,0.02),
     }
 
 if __name__=="__main__":

@@ -3,7 +3,7 @@ benchmark_network.py — transmission-side evaluation on REAL compressed images.
 No MongoDB. Reports (per network condition):
   * real compression savings (compressed latent vs original file),
   * simulated DTN store-and-forward metrics (success rate, throughput, latency),
-  * a fair protocol comparison (TCP/IP, Epidemic, PRoPHET, Neural-DTN) over one trace,
+  * a fair protocol comparison (TCP/IP, Epidemic, PRoPHET, Codec-Aware DTN) over one trace,
   * a MULTI-BUNDLE (large-file) protocol test that exposes TCP/IP's mid-transfer failure.
 
 Single condition:   python benchmark_network.py --data DATA --n 200 --condition Delayed --speed-kbps 500

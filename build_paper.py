@@ -154,16 +154,16 @@ table([["Classifier input","8-class Acc (%)","Benign/Malignant (%)","AUC (OVR)"]
       "Table 5. Classification from the compressed latent versus the full image (patient-wise five-fold).")
 
 H2("5.3 Network Transmission")
-P("Transmission is evaluated across three simulated conditions on a 500 KB/s base link (Table 6). Delivery success remains 100% in all cases while throughput and latency degrade gracefully with worsening connectivity, from 374.6 KB/s and 0.14 s (Real-Time) to 111.6 KB/s and 19.48 s (Extreme). When a larger multi-bundle payload (the original uncompressed image) is transmitted, the connection-oriented TCP/IP protocol's delivery ratio collapses from 85% to 10.5% to 0% as outages interrupt active sessions, whereas the store-and-forward schemes (Epidemic, PRoPHET, and the proposed Neural-DTN) maintain 100% delivery. This resilience, rather than the choice of codec, is the framework's core networking contribution.")
+P("Transmission is evaluated across three simulated conditions on a 500 KB/s base link (Table 6). Delivery success remains 100% in all cases while throughput and latency degrade gracefully with worsening connectivity, from 374.6 KB/s and 0.14 s (Real-Time) to 111.6 KB/s and 19.48 s (Extreme). When a larger multi-bundle payload (the original uncompressed image) is transmitted, the connection-oriented TCP/IP protocol's delivery ratio collapses from 85% to 10.5% to 0% as outages interrupt active sessions, whereas the store-and-forward schemes (Epidemic, PRoPHET, and the proposed Codec-Aware DTN) maintain 100% delivery. This resilience, rather than the choice of codec, is the framework's core networking contribution.")
 table([["Condition","Success","Throughput","Latency","TCP/IP large-file delivery"],
        ["Real-Time","100%","374.6 KB/s","0.14 s","85%"],
        ["Delayed","100%","280.6 KB/s","1.62 s","10.5%"],
        ["Extreme","100%","111.6 KB/s","19.48 s","0%"]],
       "Table 6. Transmission across simulated conditions, and large multi-bundle delivery per protocol.")
-P("Over an identical per-image link trace, the protocols also differ in transmission overhead (Table 7, Figure 7): the proposed Neural-DTN incurs about 1.0 KB per image, versus 2.5 KB for TCP/IP, 52.4 KB for PRoPHET, and 200.9 KB for flooding-based Epidemic routing.")
+P("Over an identical per-image link trace, the protocols also differ in transmission overhead (Table 7, Figure 7): the proposed Codec-Aware DTN incurs about 1.0 KB per image, versus 2.5 KB for TCP/IP, 52.4 KB for PRoPHET, and 200.9 KB for flooding-based Epidemic routing.")
 table([["Protocol","Avg overhead per image"],
        ["TCP/IP","2.5 KB"],["Epidemic","200.9 KB"],["PRoPHET","52.4 KB"],
-       ["Neural-DTN (proposed)","1.0 KB"]],
+       ["Codec-Aware DTN (proposed)","1.0 KB"]],
       "Table 7. Transmission overhead per image by protocol.")
 figure(f"{FIG}/fig_protocol_overhead.png","Figure 7. Average transmission overhead per image by protocol (log scale).", w=4.8)
 

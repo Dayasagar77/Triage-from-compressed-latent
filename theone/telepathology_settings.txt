@@ -54,7 +54,7 @@ Report.reportDir = reports/
 Report.report1 = MessageStatsReport
 
 # ================= SWEEP THE ROUTER (run once per value) =================
-# Neural-Codec DTN (single custody copy): SprayAndWait with 1 copy
+# Codec-Aware DTN (single custody copy): SprayAndWait with 1 copy
 #   Group.router = SprayAndWaitRouter
 #   SprayAndWaitRouter.nrofCopies = 1
 #   SprayAndWaitRouter.binaryMode = true

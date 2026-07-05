@@ -53,7 +53,7 @@ res = tm.benchmark_protocols(trace, num_bundles=4, total_size_kb=100)
 for k, v in res.items():
     print(f"      {k:11s} delivery={v['delivery_ratio']:>4} overhead={v['overhead']:>9} {v['efficiency']}")
 check("TCP/IP fails on a mid-transfer drop", res["TCP_IP"]["status"].startswith("Failed"))
-check("Neural-DTN delivers 100%", res["Neural_DTN"]["delivery_ratio"] == "100%")
+check("Codec-Aware DTN delivers 100%", res["Neural_DTN"]["delivery_ratio"] == "100%")
 check("DTN overhead < Epidemic",
       float(res["Neural_DTN"]["overhead"].split()[0]) < float(res["Epidemic"]["overhead"].split()[0]))
 

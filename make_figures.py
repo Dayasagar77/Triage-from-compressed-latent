@@ -72,7 +72,7 @@ def fig_protocol():
     d = load("network_results.json")
     if not d: return
     pc = d["protocol_comparison"]
-    names = {"TCP_IP":"TCP/IP","Epidemic":"Epidemic","PRoPHET":"PRoPHET","Neural_DTN":"Neural-Codec DTN\n(single custody)"}
+    names = {"TCP_IP":"TCP/IP","Epidemic":"Epidemic","PRoPHET":"PRoPHET","Neural_DTN":"Codec-Aware DTN\n(single custody)"}
     keys = ["TCP_IP","Epidemic","PRoPHET","Neural_DTN"]
     oh = [pc[k]["avg_overhead_kb"] for k in keys]
     colors = ["#bdbdbd","#fdae6b","#a1d99b","#3182bd"]
