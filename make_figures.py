@@ -122,7 +122,7 @@ def fig_compression_rd():
     if lc and lc.get("points"):
         pts = sorted((v["avg_kb"], v["avg_ssim"]) for v in lc["points"].values())
         ax.plot([x for x, _ in pts], [y for _, y in pts], "-D", color="crimson",
-                label="Learned codec v2 (proposed)", markersize=7, linewidth=2)
+                label="Factorized-prior codec", markersize=7, linewidth=2)
     ax.set_xlabel("Compressed size (KB per 224x224 image)")
     ax.set_ylabel("SSIM (reconstruction quality)")
     ax.set_title("Rate-distortion at 224x224")

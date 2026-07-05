@@ -16,7 +16,7 @@ def arrow(x1,y1,x2,y2,style="-|>",color="#444",lw=1.8):
     ax.add_patch(FancyArrowPatch((x1,y1),(x2,y2),arrowstyle=style,mutation_scale=16,color=color,lw=lw))
 
 # Title
-ax.text(5.5, 4.35, "Diagnosis from the Compressed Latent — Telepathology for Constrained Networks",
+ax.text(5.5, 4.35, "Triage from the Compressed Latent — Telepathology for Bandwidth-Constrained Networks",
         ha="center", va="center", fontsize=12.5, fontweight="bold", color="#1a1a1a")
 
 # Source cluster

@@ -8,8 +8,8 @@ benign/malignant accuracy. The x-axis (KB) is the codec's measured avg size from
 learned_codec_results.json. This shows diagnosis degrading GRACEFULLY as bandwidth shrinks —
 something no JPEG pipeline can offer, since JPEG's bitstream is not diagnosable.
 
-    python diagnose_vs_bytes.py --data "path/to/BreakHis_8class" \
-        --folds "path/to/archive/Folds.csv" --epochs 20
+    python diagnose_vs_bytes.py --data "D:/DAYA PHD/PHD WORK/Journal paper 3/BreakHis_8class" \
+        --folds "D:/DAYA PHD/PHD WORK/Journal paper 3/archive/Folds.csv" --epochs 20
 
 Output: results/diagnose_vs_bytes.json  and  results/figures/fig_diagnose_vs_bytes.png
 Needs models/learned_codec_l{0.002,0.01,0.05}.pth (already trained).
@@ -101,8 +101,8 @@ def main():
         xs=[c["kb"] for c in pts]; ys=[c["binary_acc_mean"]*100 for c in pts]; es=[c["binary_acc_std"]*100 for c in pts]
         fig,ax=plt.subplots(figsize=(6,4.2))
         ax.errorbar(xs,ys,yerr=es,marker="o",capsize=4,linewidth=2,color="#7040c0")
-        ax.set_xlabel("Transmitted size (KB per image)"); ax.set_ylabel("Benign/malignant accuracy from latent (%)")
-        ax.set_title("Diagnosis from the compressed latent vs. transmitted bytes"); ax.grid(alpha=0.3)
+        ax.set_xlabel("Transmitted size (KB per image)"); ax.set_ylabel("Benign/malignant accuracy (%)")
+        ax.set_title("Triage from the compressed latent is rate-robust"); ax.grid(alpha=0.3)
         plt.tight_layout(); plt.savefig("results/figures/fig_diagnose_vs_bytes.png",dpi=160,bbox_inches="tight")
         print("figure saved: results/figures/fig_diagnose_vs_bytes.png")
     except Exception as e:
