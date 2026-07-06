@@ -36,10 +36,10 @@ def fig_per_mag():
     ax1.bar(x-w/2, bms, w, yerr=bms_e, capsize=4, label="Benign/Malignant acc.", color="#2c7fb8")
     ax1.bar(x+w/2, accs, w, yerr=accs_e, capsize=4, label="8-class acc.", color="#7fcdbb")
     ax1.set_ylabel("Accuracy (%)"); ax1.set_xlabel("Magnification")
-    ax1.set_xticks(x); ax1.set_xticklabels([f"{m}X" for m in MAGS]); ax1.set_ylim(0, 100)
+    ax1.set_xticks(x); ax1.set_xticklabels([f"{m}X" for m in MAGS]); ax1.set_ylim(0, 106)
     ax1.legend(loc="upper right"); ax1.set_title("Classification accuracy per magnification (patient-wise 5-fold)")
-    for i,v in enumerate(bms): ax1.text(i-w/2, v+2, f"{v:.1f}", ha="center", fontsize=8)
-    for i,v in enumerate(accs): ax1.text(i+w/2, v+2, f"{v:.1f}", ha="center", fontsize=8)
+    for i,v in enumerate(bms): ax1.text(i-w/2, v+bms_e[i]+1.5, f"{v:.1f}", ha="center", fontsize=8)
+    for i,v in enumerate(accs): ax1.text(i+w/2, v+accs_e[i]+1.5, f"{v:.1f}", ha="center", fontsize=8)
     plt.tight_layout(); plt.savefig(os.path.join(FIG,"fig_per_magnification.png"), dpi=300); plt.close()
     print("wrote fig_per_magnification.png")
 
@@ -53,7 +53,7 @@ def fig_confusion(mag="40"):
         cm = np.loadtxt(f, delimiter=",", dtype=int)
     cmn = cm / cm.sum(axis=1, keepdims=True).clip(min=1)
     fig, ax = plt.subplots(figsize=(6.8, 5.8))
-    im = ax.imshow(cmn, cmap="Blues", vmin=0, vmax=1)
+    im = ax.imshow(cmn*100, cmap="Blues", vmin=0, vmax=100)
     ax.set_xticks(range(len(header))); ax.set_yticks(range(len(header)))
     short=[h[:10] for h in header]
     ax.set_xticklabels(short, rotation=45, ha="right", fontsize=7); ax.set_yticklabels(short, fontsize=7)
@@ -63,7 +63,7 @@ def fig_confusion(mag="40"):
                     color="white" if cmn[i,j]>0.5 else "black", fontsize=7)
     ax.set_xlabel("Predicted"); ax.set_ylabel("True")
     ax.set_title(f"Confusion matrix (row-normalized %), {mag}X")
-    fig.colorbar(im, fraction=0.046, pad=0.04)
+    fig.colorbar(im, fraction=0.046, pad=0.04).set_label("% of true class")
     plt.tight_layout(); plt.savefig(os.path.join(FIG,f"fig_confusion_{mag}X.png"), dpi=300); plt.close()
     print(f"wrote fig_confusion_{mag}X.png")
 

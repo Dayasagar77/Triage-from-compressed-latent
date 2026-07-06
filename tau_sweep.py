@@ -1,5 +1,5 @@
 """
-tau_sweep.py — empirically find the promotion threshold τ that balances
+tau_sweep.py — reviewer Q2: empirically find the promotion threshold τ that balances
 malignant sensitivity against fast-path queue load. Trains the latent triage head
 (same patient-wise protocol as emit_latent_confusion.py), pools per-sample malignant
 probabilities, then sweeps τ: for each τ it computes the promoted fraction, malignant
@@ -7,8 +7,8 @@ sensitivity, and specificity, and feeds the operating point into the Cobham
 non-preemptive M/D/1 priority model (as in queue_sim.py) to get the missed-malignant
 queue delay at a chosen load ρ.
 
-Run: python tau_sweep.py --data "path/to/BreakHis_8class" \
-        --folds "path/to/archive/Folds.csv" --rho 0.6
+Run: python tau_sweep.py --data "D:/DAYA PHD/PHD WORK/Journal paper 3/BreakHis_8class" \
+        --folds "D:/DAYA PHD/PHD WORK/Journal paper 3/archive/Folds.csv" --rho 0.6
 Output: results/tau_sweep.json , results/figures/fig_tau_sweep.png  (send me the json)
 """
 import argparse, json, os
@@ -98,11 +98,11 @@ def main():
     json.dump(out,open("results/tau_sweep.json","w"),indent=2)
     fig,ax1=plt.subplots(figsize=(6.2,4.2)); ax2=ax1.twinx()
     t=[r["tau"] for r in rows]
-    ax1.plot(t,[r["sensitivity"] for r in rows],"o-",color="tab:red",label="malignant sensitivity")
-    ax1.plot(t,[r["promoted_fraction"] for r in rows],"s--",color="tab:orange",label="promoted fraction")
-    ax2.plot(t,[r["missed_malignant_delay_s"] for r in rows],"^-",color="tab:blue",label="missed-malignant delay (s)")
+    l1,=ax1.plot(t,[r["sensitivity"] for r in rows],"o-",color="tab:red",label="malignant sensitivity (left)")
+    l2,=ax1.plot(t,[r["promoted_fraction"] for r in rows],"s--",color="tab:orange",label="promoted fraction (left)")
+    l3,=ax2.plot(t,[r["missed_malignant_delay_s"] for r in rows],"^-",color="tab:blue",label="missed-malignant delay, s (right)")
     ax1.set_xlabel("promotion threshold τ"); ax1.set_ylabel("sensitivity / promoted fraction"); ax2.set_ylabel("missed-malignant queue delay (s)")
-    ax1.set_title(f"τ trade-off at ρ={args.rho}"); ax1.legend(loc="center left",fontsize=8); ax2.legend(loc="upper right",fontsize=8)
+    ax1.set_title(f"τ trade-off at ρ = {args.rho}"); ax1.legend(handles=[l1,l2,l3],loc="lower left",fontsize=8.5,framealpha=0.92)
     plt.tight_layout(); plt.savefig("results/figures/fig_tau_sweep.png",dpi=140)
     print(json.dumps(out,indent=2)); print("saved results/tau_sweep.json + fig_tau_sweep.png")
 
