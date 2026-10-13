@@ -1,0 +1,25 @@
+{
+  "n_patients": 68,
+  "n_malignant": 47,
+  "n_benign": 21,
+  "tp": 43,
+  "tn": 18,
+  "sensitivity": 0.9148936170212766,
+  "sensitivity_wilson95": [
+    0.8006846221303541,
+    0.9664058765420744
+  ],
+  "specificity": 0.8571428571428571,
+  "specificity_wilson95": [
+    0.6536393971937906,
+    0.9501898750027473
+  ],
+  "auc": 0.9645390070921985,
+  "auc_numerator_pairs": 952.0,
+  "auc_pairs": 987,
+  "auc_se_hanley_mcneil": 0.02072512593501936,
+  "auc_ci95_logit": [
+    0.8924106720047904,
+    0.9889129547910434
+  ]
+}

@@ -1,0 +1,181 @@
+nohup: ignoring input
+=== waiting for any running telepathology job to finish: Tue Sep 29 10:27:27 IST 2026 ===
+=== r13 (seed 42) start: Tue Sep 29 10:27:27 IST 2026 ===
+🚀 AI Engine loading on: CUDA
+classes: ['Adenosis', 'Carcinoma', 'Fibroadenoma', 'Lobular Carcinoma', 'Mucinous Carcinoma', 'Papillary Carcinoma', 'Phyllodes Tumor', 'Tubular Adenoma'] | benign idx: [0, 2, 6, 7] | device: cuda | seed: 42
+  split 1 epoch 1/25 loss=1.555 (10s)
+  split 1 epoch 2/25 loss=0.495 (10s)
+  split 1 epoch 3/25 loss=0.284 (10s)
+  split 1 epoch 4/25 loss=0.205 (11s)
+  split 1 epoch 5/25 loss=0.144 (11s)
+  split 1 epoch 6/25 loss=0.115 (11s)
+  split 1 epoch 7/25 loss=0.082 (11s)
+  split 1 epoch 8/25 loss=0.082 (11s)
+  split 1 epoch 9/25 loss=0.061 (12s)
+  split 1 epoch 10/25 loss=0.058 (11s)
+  split 1 epoch 11/25 loss=0.040 (11s)
+  split 1 epoch 12/25 loss=0.040 (11s)
+  split 1 epoch 13/25 loss=0.034 (11s)
+  split 1 epoch 14/25 loss=0.034 (11s)
+  split 1 epoch 15/25 loss=0.027 (11s)
+  split 1 epoch 16/25 loss=0.019 (11s)
+  split 1 epoch 17/25 loss=0.017 (10s)
+  split 1 epoch 18/25 loss=0.018 (11s)
+  split 1 epoch 19/25 loss=0.015 (11s)
+  split 1 epoch 20/25 loss=0.009 (12s)
+  split 1 epoch 21/25 loss=0.013 (12s)
+  split 1 epoch 22/25 loss=0.010 (11s)
+  split 1 epoch 23/25 loss=0.009 (11s)
+  split 1 epoch 24/25 loss=0.011 (11s)
+  split 1 epoch 25/25 loss=0.010 (11s)
+split 1: 2904 held-out images
+  split 2 epoch 1/25 loss=1.570 (12s)
+  split 2 epoch 2/25 loss=0.551 (12s)
+  split 2 epoch 3/25 loss=0.327 (12s)
+  split 2 epoch 4/25 loss=0.241 (12s)
+  split 2 epoch 5/25 loss=0.191 (12s)
+  split 2 epoch 6/25 loss=0.158 (12s)
+  split 2 epoch 7/25 loss=0.139 (12s)
+  split 2 epoch 8/25 loss=0.122 (12s)
+  split 2 epoch 9/25 loss=0.101 (12s)
+  split 2 epoch 10/25 loss=0.091 (12s)
+  split 2 epoch 11/25 loss=0.077 (12s)
+  split 2 epoch 12/25 loss=0.083 (12s)
+  split 2 epoch 13/25 loss=0.078 (12s)
+  split 2 epoch 14/25 loss=0.072 (13s)
+  split 2 epoch 15/25 loss=0.053 (12s)
+  split 2 epoch 16/25 loss=0.048 (14s)
+  split 2 epoch 17/25 loss=0.051 (13s)
+  split 2 epoch 18/25 loss=0.061 (13s)
+  split 2 epoch 19/25 loss=0.052 (13s)
+  split 2 epoch 20/25 loss=0.036 (12s)
+  split 2 epoch 21/25 loss=0.037 (14s)
+  split 2 epoch 22/25 loss=0.039 (12s)
+  split 2 epoch 23/25 loss=0.047 (12s)
+  split 2 epoch 24/25 loss=0.047 (13s)
+  split 2 epoch 25/25 loss=0.032 (12s)
+split 2: 2403 held-out images
+  split 3 epoch 1/25 loss=1.520 (12s)
+  split 3 epoch 2/25 loss=0.530 (12s)
+  split 3 epoch 3/25 loss=0.306 (12s)
+  split 3 epoch 4/25 loss=0.235 (12s)
+  split 3 epoch 5/25 loss=0.151 (12s)
+  split 3 epoch 6/25 loss=0.150 (11s)
+  split 3 epoch 7/25 loss=0.119 (12s)
+  split 3 epoch 8/25 loss=0.090 (11s)
+  split 3 epoch 9/25 loss=0.087 (11s)
+  split 3 epoch 10/25 loss=0.057 (11s)
+  split 3 epoch 11/25 loss=0.063 (12s)
+  split 3 epoch 12/25 loss=0.059 (11s)
+  split 3 epoch 13/25 loss=0.043 (11s)
+  split 3 epoch 14/25 loss=0.035 (11s)
+  split 3 epoch 15/25 loss=0.024 (12s)
+  split 3 epoch 16/25 loss=0.026 (11s)
+  split 3 epoch 17/25 loss=0.026 (11s)
+  split 3 epoch 18/25 loss=0.015 (12s)
+  split 3 epoch 19/25 loss=0.016 (11s)
+  split 3 epoch 20/25 loss=0.016 (11s)
+  split 3 epoch 21/25 loss=0.014 (12s)
+  split 3 epoch 22/25 loss=0.011 (11s)
+  split 3 epoch 23/25 loss=0.013 (11s)
+  split 3 epoch 24/25 loss=0.015 (11s)
+  split 3 epoch 25/25 loss=0.008 (11s)
+split 3: 2577 held-out images
+  split 4 epoch 1/25 loss=1.480 (12s)
+  split 4 epoch 2/25 loss=0.536 (11s)
+  split 4 epoch 3/25 loss=0.336 (11s)
+  split 4 epoch 4/25 loss=0.209 (11s)
+  split 4 epoch 5/25 loss=0.193 (11s)
+  split 4 epoch 6/25 loss=0.164 (11s)
+  split 4 epoch 7/25 loss=0.148 (11s)
+  split 4 epoch 8/25 loss=0.098 (11s)
+  split 4 epoch 9/25 loss=0.093 (11s)
+  split 4 epoch 10/25 loss=0.098 (11s)
+  split 4 epoch 11/25 loss=0.086 (12s)
+  split 4 epoch 12/25 loss=0.065 (12s)
+  split 4 epoch 13/25 loss=0.049 (12s)
+  split 4 epoch 14/25 loss=0.060 (12s)
+  split 4 epoch 15/25 loss=0.053 (11s)
+  split 4 epoch 16/25 loss=0.049 (11s)
+  split 4 epoch 17/25 loss=0.047 (12s)
+  split 4 epoch 18/25 loss=0.042 (11s)
+  split 4 epoch 19/25 loss=0.035 (11s)
+  split 4 epoch 20/25 loss=0.035 (12s)
+  split 4 epoch 21/25 loss=0.035 (12s)
+  split 4 epoch 22/25 loss=0.037 (12s)
+  split 4 epoch 23/25 loss=0.034 (11s)
+  split 4 epoch 24/25 loss=0.034 (12s)
+  split 4 epoch 25/25 loss=0.032 (11s)
+split 4: 2698 held-out images
+  split 5 epoch 1/25 loss=1.462 (11s)
+  split 5 epoch 2/25 loss=0.517 (11s)
+  split 5 epoch 3/25 loss=0.320 (11s)
+  split 5 epoch 4/25 loss=0.204 (10s)
+  split 5 epoch 5/25 loss=0.158 (10s)
+  split 5 epoch 6/25 loss=0.118 (10s)
+  split 5 epoch 7/25 loss=0.116 (11s)
+  split 5 epoch 8/25 loss=0.088 (10s)
+  split 5 epoch 9/25 loss=0.068 (11s)
+  split 5 epoch 10/25 loss=0.061 (11s)
+  split 5 epoch 11/25 loss=0.053 (11s)
+  split 5 epoch 12/25 loss=0.035 (11s)
+  split 5 epoch 13/25 loss=0.054 (11s)
+  split 5 epoch 14/25 loss=0.030 (11s)
+  split 5 epoch 15/25 loss=0.029 (11s)
+  split 5 epoch 16/25 loss=0.026 (11s)
+  split 5 epoch 17/25 loss=0.020 (11s)
+  split 5 epoch 18/25 loss=0.016 (11s)
+  split 5 epoch 19/25 loss=0.012 (11s)
+  split 5 epoch 20/25 loss=0.016 (11s)
+  split 5 epoch 21/25 loss=0.014 (11s)
+  split 5 epoch 22/25 loss=0.015 (11s)
+  split 5 epoch 23/25 loss=0.012 (11s)
+  split 5 epoch 24/25 loss=0.011 (11s)
+  split 5 epoch 25/25 loss=0.013 (11s)
+split 5: 3083 held-out images
+{
+ "n_predictions": 13665,
+ "n_patients": 68,
+ "field_argmax": {
+  "n": 13665,
+  "acc": 0.8757,
+  "sens": 0.9191,
+  "spec": 0.7878,
+  "auc": 0.9459,
+  "tp": 8410,
+  "tn": 3557,
+  "fp": 958,
+  "fn": 740
+ },
+ "patient": {
+  "n": 68,
+  "acc": 0.9412,
+  "sens": 0.9574,
+  "spec": 0.9048,
+  "auc": 0.9909,
+  "tp": 45,
+  "tn": 19,
+  "fp": 2,
+  "fn": 2
+ },
+ "patient_ci95": {
+  "acc": [
+   0.8824,
+   0.9853
+  ],
+  "sens": [
+   0.8909,
+   1.0
+  ],
+  "spec": [
+   0.7619,
+   1.0
+  ],
+  "auc": [
+   0.9733,
+   1.0
+  ]
+ }
+}
+WROTE results/source_casewise_results.json and results/source_heldout_predictions.csv
+=== R13 DONE: Tue Sep 29 10:52:23 IST 2026 ===

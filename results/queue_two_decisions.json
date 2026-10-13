@@ -1,0 +1,191 @@
+{
+  "units": "waits in units of the deterministic service time D",
+  "seed": 20261013,
+  "points": {
+    "transmission_source_classifier": {
+      "sensitivity": 0.9191,
+      "specificity": 0.7878,
+      "malignant_fraction": 0.6696,
+      "rows": [
+        {
+          "rho": 0.3,
+          "analytic": {
+            "frac_promoted": 0.6855,
+            "W_promoted": 0.1888,
+            "W_missed": 0.2698,
+            "W_fifo": 0.2143,
+            "malignant_reduction_pct": 8.8217,
+            "missed_over_fifo": 1.2589
+          },
+          "simulated": {
+            "W_promoted": 0.1908,
+            "W_low": 0.2737,
+            "W_missed": 0.2744,
+            "W_fifo": 0.2168,
+            "malignant_reduction_pct": 9.0753,
+            "missed_over_fifo": 1.2657
+          }
+        },
+        {
+          "rho": 0.5,
+          "analytic": {
+            "frac_promoted": 0.6855,
+            "W_promoted": 0.3804,
+            "W_missed": 0.7608,
+            "W_fifo": 0.5,
+            "malignant_reduction_pct": 17.77,
+            "missed_over_fifo": 1.5215
+          },
+          "simulated": {
+            "W_promoted": 0.3846,
+            "W_low": 0.7651,
+            "W_missed": 0.7626,
+            "W_fifo": 0.5046,
+            "malignant_reduction_pct": 17.8587,
+            "missed_over_fifo": 1.5114
+          }
+        },
+        {
+          "rho": 0.7,
+          "analytic": {
+            "frac_promoted": 0.6855,
+            "W_promoted": 0.6729,
+            "W_missed": 2.2431,
+            "W_fifo": 1.1667,
+            "malignant_reduction_pct": 31.4362,
+            "missed_over_fifo": 1.9226
+          },
+          "simulated": {
+            "W_promoted": 0.6767,
+            "W_low": 2.2474,
+            "W_missed": 2.2606,
+            "W_fifo": 1.1691,
+            "malignant_reduction_pct": 31.2765,
+            "missed_over_fifo": 1.9336
+          }
+        },
+        {
+          "rho": 0.9,
+          "analytic": {
+            "frac_promoted": 0.6855,
+            "W_promoted": 1.1749,
+            "W_missed": 11.7491,
+            "W_fifo": 4.5,
+            "malignant_reduction_pct": 54.8868,
+            "missed_over_fifo": 2.6109
+          },
+          "simulated": {
+            "W_promoted": 1.182,
+            "W_low": 11.6868,
+            "W_missed": 11.7867,
+            "W_fifo": 4.4821,
+            "malignant_reduction_pct": 54.6202,
+            "missed_over_fifo": 2.6297
+          }
+        }
+      ]
+    },
+    "review_latent_per_field_imagewise": {
+      "sensitivity": 0.8919,
+      "specificity": 0.6707,
+      "malignant_fraction": 0.664,
+      "rows": [
+        {
+          "rho": 0.3,
+          "analytic": {
+            "frac_promoted": 0.7029,
+            "W_promoted": 0.1901,
+            "W_missed": 0.2715,
+            "W_fifo": 0.2143,
+            "malignant_reduction_pct": 7.1863,
+            "missed_over_fifo": 1.2672
+          }
+        },
+        {
+          "rho": 0.5,
+          "analytic": {
+            "frac_promoted": 0.7029,
+            "W_promoted": 0.3855,
+            "W_missed": 0.7709,
+            "W_fifo": 0.5,
+            "malignant_reduction_pct": 14.5732,
+            "missed_over_fifo": 1.5419
+          }
+        },
+        {
+          "rho": 0.7,
+          "analytic": {
+            "frac_promoted": 0.7029,
+            "W_promoted": 0.689,
+            "W_missed": 2.2966,
+            "W_fifo": 1.1667,
+            "malignant_reduction_pct": 26.0483,
+            "missed_over_fifo": 1.9685
+          }
+        },
+        {
+          "rho": 0.9,
+          "analytic": {
+            "frac_promoted": 0.7029,
+            "W_promoted": 1.2248,
+            "W_missed": 12.2476,
+            "W_fifo": 4.5,
+            "malignant_reduction_pct": 46.304,
+            "missed_over_fifo": 2.7217
+          }
+        }
+      ]
+    },
+    "review_latent_per_patient_leakfree": {
+      "sensitivity": 0.9149,
+      "specificity": 0.8571,
+      "malignant_fraction": 0.6912,
+      "rows": [
+        {
+          "rho": 0.3,
+          "analytic": {
+            "frac_promoted": 0.6765,
+            "W_promoted": 0.1882,
+            "W_missed": 0.2688,
+            "W_fifo": 0.2143,
+            "malignant_reduction_pct": 8.9739,
+            "missed_over_fifo": 1.2546
+          }
+        },
+        {
+          "rho": 0.5,
+          "analytic": {
+            "frac_promoted": 0.6765,
+            "W_promoted": 0.3778,
+            "W_missed": 0.7556,
+            "W_fifo": 0.5,
+            "malignant_reduction_pct": 18.0142,
+            "missed_over_fifo": 1.5111
+          }
+        },
+        {
+          "rho": 0.7,
+          "analytic": {
+            "frac_promoted": 0.6765,
+            "W_promoted": 0.6648,
+            "W_missed": 2.216,
+            "W_fifo": 1.1667,
+            "malignant_reduction_pct": 31.7009,
+            "missed_over_fifo": 1.8994
+          }
+        },
+        {
+          "rho": 0.9,
+          "analytic": {
+            "frac_promoted": 0.6765,
+            "W_promoted": 1.1504,
+            "W_missed": 11.5038,
+            "W_fifo": 4.5,
+            "malignant_reduction_pct": 54.8552,
+            "missed_over_fifo": 2.5564
+          }
+        }
+      ]
+    }
+  }
+}

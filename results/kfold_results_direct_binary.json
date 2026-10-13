@@ -1,0 +1,77 @@
+{
+  "baseline": "direct_binary",
+  "num_classes": 2,
+  "quick": false,
+  "seed": 42,
+  "protocol": "official patient-wise folds (Folds.csv)",
+  "per_fold": [
+    {
+      "binary_accuracy": 0.9028925619834711,
+      "binary_auc": 0.9628677332395686,
+      "sensitivity": 0.9382911392405063,
+      "specificity": 0.8363095238095238,
+      "tp": 1779,
+      "tn": 843,
+      "fp": 165,
+      "fn": 117
+    },
+    {
+      "binary_accuracy": 0.8260507698709946,
+      "binary_auc": 0.9323089250046891,
+      "sensitivity": 0.7915425848719476,
+      "specificity": 0.9060773480662984,
+      "tp": 1329,
+      "tn": 656,
+      "fp": 68,
+      "fn": 350
+    },
+    {
+      "binary_accuracy": 0.8932867675591774,
+      "binary_auc": 0.9451512622693841,
+      "sensitivity": 0.9105058365758755,
+      "specificity": 0.8534704370179949,
+      "tp": 1638,
+      "tn": 664,
+      "fp": 114,
+      "fn": 161
+    },
+    {
+      "binary_accuracy": 0.8346923647146034,
+      "binary_auc": 0.9292758757708209,
+      "sensitivity": 0.8406125921724333,
+      "specificity": 0.8235294117647058,
+      "tp": 1482,
+      "tn": 770,
+      "fp": 165,
+      "fn": 281
+    },
+    {
+      "binary_accuracy": 0.8962049951346092,
+      "binary_auc": 0.9607915372508601,
+      "sensitivity": 0.9642324888226528,
+      "specificity": 0.7682242990654206,
+      "tp": 1941,
+      "tn": 822,
+      "fp": 248,
+      "fn": 72
+    }
+  ],
+  "summary": {
+    "binary_accuracy_mean": 0.8706254918525712,
+    "binary_accuracy_std": 0.033127341231337086,
+    "binary_auc_mean": 0.9460790667070645,
+    "binary_auc_std": 0.013936577504248402,
+    "sensitivity_mean": 0.8890369283366832,
+    "sensitivity_std": 0.06386129809220661,
+    "specificity_mean": 0.8375222039447886,
+    "specificity_std": 0.0446175354999661,
+    "tp_mean": 1633.8,
+    "tp_std": 215.13660776353242,
+    "tn_mean": 751.0,
+    "tn_std": 78.05126520435142,
+    "fp_mean": 152.0,
+    "fp_std": 60.08993260106055,
+    "fn_mean": 196.2,
+    "fn_std": 103.71383707104853
+  }
+}

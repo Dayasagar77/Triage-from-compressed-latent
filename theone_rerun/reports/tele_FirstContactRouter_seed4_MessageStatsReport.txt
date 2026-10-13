@@ -1,0 +1,20 @@
+Message stats for scenario tele_FirstContactRouter_seed4
+sim_time: 43200.0000
+created: 484
+started: 4154
+relayed: 4153
+aborted: 1
+dropped: 0
+removed: 4153
+delivered: 476
+delivery_prob: 0.9835
+response_prob: 0.0000
+overhead_ratio: 7.7248
+latency_avg: 917.4601
+latency_med: 474.0000
+hopcount_avg: 8.5903
+hopcount_med: 8
+buffertime_avg: 105.9143
+buffertime_med: 4.0000
+rtt_avg: NaN
+rtt_med: NaN

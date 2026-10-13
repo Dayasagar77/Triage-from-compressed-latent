@@ -1,0 +1,20 @@
+Message stats for scenario tele_ProphetRouter_seed2
+sim_time: 43200.0000
+created: 484
+started: 10016
+relayed: 10014
+aborted: 1
+dropped: 0
+removed: 0
+delivered: 480
+delivery_prob: 0.9917
+response_prob: 0.0000
+overhead_ratio: 19.8625
+latency_avg: 397.1292
+latency_med: 320.0000
+hopcount_avg: 2.8667
+hopcount_med: 3
+buffertime_avg: NaN
+buffertime_med: NaN
+rtt_avg: NaN
+rtt_med: NaN

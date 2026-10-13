@@ -1,0 +1,25 @@
+{
+ "codec": "FactorizedCodec lambda=0.01 (models/learned_codec_l0.01.pth)",
+ "selection": "first Adenosis and first Ductal Carcinoma image, in file order, of the codec's 400-image held-out evaluation set",
+ "kb_is": "entropy-model estimate of the latent (as in make_reconstruction_figure.py)",
+ "images": [
+  {
+   "label": "Benign (Adenosis)",
+   "file": "SOB_B_A-14-22549AB-200-025.png",
+   "index": 54,
+   "in_codec_training_split": false,
+   "kb_estimate": 3.692,
+   "psnr_db": 28.2,
+   "ssim": 0.8694
+  },
+  {
+   "label": "Malignant (Ductal Carcinoma)",
+   "file": "SOB_M_DC-14-10926-40-004.png",
+   "index": 466,
+   "in_codec_training_split": false,
+   "kb_estimate": 5.098,
+   "psnr_db": 27.72,
+   "ssim": 0.8461
+  }
+ ]
+}

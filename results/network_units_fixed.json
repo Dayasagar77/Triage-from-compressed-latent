@@ -1,0 +1,569 @@
+{
+ "units": {
+  "link_rate": "500 kb/s = 500,000 bit/s",
+  "KB": "1,024 bytes",
+  "tx_time": "8*bytes/500,000 s",
+  "segment_bytes": 65536
+ },
+ "conditions": {
+  "Real-Time": {
+   "p_up": 0.98,
+   "outage_s": [
+    0.1,
+    0.5
+   ]
+  },
+  "Delayed": {
+   "p_up": 0.7,
+   "outage_s": [
+    2.0,
+    5.0
+   ]
+  },
+  "Extreme": {
+   "p_up": 0.3,
+   "outage_s": [
+    5.0,
+    10.0
+   ]
+  }
+ },
+ "payload_bytes": {
+  "recommended_hyperprior_actual": 3632,
+  "factorized_l0.01_actual": 4989,
+  "jpeg_q20": 4639,
+  "jpeg_q30": 5881,
+  "residual_ae_49KB": 50184,
+  "original_png_mean": 537395
+ },
+ "payload_notes": {
+  "recommended_hyperprior_actual": "scale-hyperprior lambda=0.01, mean actual range-coded bytes over its 400-image evaluation set (actual_bitstream_results.json, r4_actual_bitstream.py; round trip lossless); entropy-model estimate was 3,643 B",
+  "factorized_l0.01_actual": "factorized-prior lambda=0.01, mean actual range-coded bytes over its 400-image evaluation set (actual_bitstream_results.json); entropy-model estimate was 4,996 B",
+  "jpeg_q20": "actual bytes (compression_comparison.json)",
+  "jpeg_q30": "actual bytes (compression_comparison.json)",
+  "residual_ae_49KB": "float16 residual-autoencoder latent, the payload of the original network/queue analyses (compression_results.json)",
+  "original_png_mean": "mean original PNG, 524.8 KB (network_results.json)"
+ },
+ "transport": {
+  "recommended_hyperprior_actual": {
+   "Real-Time": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.063,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.063,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.063,
+     "mean_overhead_kb": 0.071,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0581
+   },
+   "Delayed": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.511,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.511,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.511,
+     "mean_overhead_kb": 0.071,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0581
+   },
+   "Extreme": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.932,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.932,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.932,
+     "mean_overhead_kb": 0.071,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0581
+   }
+  },
+  "factorized_l0.01_actual": {
+   "Real-Time": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.084,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.084,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.084,
+     "mean_overhead_kb": 0.097,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0798
+   },
+   "Delayed": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.533,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.533,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.533,
+     "mean_overhead_kb": 0.097,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0798
+   },
+   "Extreme": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.954,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.954,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.954,
+     "mean_overhead_kb": 0.097,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0798
+   }
+  },
+  "jpeg_q20": {
+   "Real-Time": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.079,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.079,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.079,
+     "mean_overhead_kb": 0.091,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0742
+   },
+   "Delayed": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.528,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.528,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.528,
+     "mean_overhead_kb": 0.091,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0742
+   },
+   "Extreme": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.948,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.948,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.948,
+     "mean_overhead_kb": 0.091,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0742
+   }
+  },
+  "jpeg_q30": {
+   "Real-Time": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.099,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.099,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.099,
+     "mean_overhead_kb": 0.115,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0941
+   },
+   "Delayed": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.547,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.547,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 1.547,
+     "mean_overhead_kb": 0.115,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0941
+   },
+   "Extreme": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.968,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.968,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 17.968,
+     "mean_overhead_kb": 0.115,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.0941
+   }
+  },
+  "residual_ae_49KB": {
+   "Real-Time": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.807,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.807,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 0.807,
+     "mean_overhead_kb": 0.98,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.8029
+   },
+   "Delayed": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 2.256,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 2.256,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 2.256,
+     "mean_overhead_kb": 0.98,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.8029
+   },
+   "Extreme": {
+    "TCP_nonresumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 18.677,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 18.677,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 18.677,
+     "mean_overhead_kb": 0.98,
+     "mean_reconnections": 0
+    },
+    "segments": 1,
+    "ideal_tx_time_s": 0.8029
+   }
+  },
+  "original_png_mean": {
+   "Real-Time": {
+    "TCP_nonresumable": {
+     "delivery_pct": 84.9,
+     "mean_latency_s": 8.603,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 8.697,
+     "mean_overhead_kb": 0.032,
+     "mean_reconnections": 0.16
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 8.649,
+     "mean_overhead_kb": 10.496,
+     "mean_reconnections": 0
+    },
+    "segments": 9,
+    "ideal_tx_time_s": 8.5983
+   },
+   "Delayed": {
+    "TCP_nonresumable": {
+     "delivery_pct": 5.8,
+     "mean_latency_s": 10.148,
+     "mean_overhead_kb": 0.0,
+     "mean_reconnections": 0
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 22.627,
+     "mean_overhead_kb": 0.479,
+     "mean_reconnections": 2.4
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 21.908,
+     "mean_overhead_kb": 10.496,
+     "mean_reconnections": 0
+    },
+    "segments": 9,
+    "ideal_tx_time_s": 8.5983
+   },
+   "Extreme": {
+    "TCP_nonresumable": {
+     "delivery_pct": 0.0,
+     "mean_latency_s": null,
+     "mean_overhead_kb": null,
+     "mean_reconnections": null
+    },
+    "TCP_resumable": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 169.086,
+     "mean_overhead_kb": 1.121,
+     "mean_reconnections": 5.6
+    },
+    "DTN_single_custody": {
+     "delivery_pct": 100.0,
+     "mean_latency_s": 167.404,
+     "mean_overhead_kb": 10.496,
+     "mean_reconnections": 0
+    },
+    "segments": 9,
+    "ideal_tx_time_s": 8.5983
+   }
+  }
+ },
+ "overhead_eq10_kb": {
+  "recommended_hyperprior_actual": {
+   "TCP/IP": 0.18,
+   "Epidemic": 14.54,
+   "PRoPHET": 3.8,
+   "Single-custody DTN": 0.07
+  },
+  "factorized_l0.01_actual": {
+   "TCP/IP": 0.24,
+   "Epidemic": 19.98,
+   "PRoPHET": 5.21,
+   "Single-custody DTN": 0.1
+  },
+  "jpeg_q20": {
+   "TCP/IP": 0.23,
+   "Epidemic": 18.57,
+   "PRoPHET": 4.85,
+   "Single-custody DTN": 0.09
+  },
+  "jpeg_q30": {
+   "TCP/IP": 0.29,
+   "Epidemic": 23.55,
+   "PRoPHET": 6.15,
+   "Single-custody DTN": 0.11
+  },
+  "residual_ae_49KB": {
+   "TCP/IP": 2.45,
+   "Epidemic": 200.93,
+   "PRoPHET": 52.44,
+   "Single-custody DTN": 0.98
+  },
+  "original_png_mean": {
+   "TCP/IP": 26.24,
+   "Epidemic": 2151.68,
+   "PRoPHET": 561.54,
+   "Single-custody DTN": 10.5
+  }
+ },
+ "queue": {
+  "service_payload": "recommended_hyperprior_actual",
+  "service_time_s": 0.05811,
+  "note": "percent reductions at a fixed utilisation rho are independent of the service time D; absolute waits scale with D",
+  "operating_points": {
+   "latent_case_level": {
+    "operating_point": {
+     "sens": 0.9362,
+     "spec": 0.8095,
+     "source": "latent_caselevel_results.json patient_level (68 patients: 47 malignant, 21 benign; mean score; threshold 0.5)"
+    },
+    "malignant_fraction": 0.664,
+    "service_time_s": 0.05811,
+    "rows": [
+     {
+      "rho": 0.3,
+      "promoted_fraction": 0.6856,
+      "W_promoted_theory_s": 0.011,
+      "W_notpromoted_theory_s": 0.0157,
+      "W_fifo_theory_s": 0.0125,
+      "W_malignant_theory_s": 0.0113,
+      "malignant_wait_reduction_pct_theory": 9.5,
+      "W_malignant_sim_s": 0.0112,
+      "W_missed_malignant_sim_s": 0.0158,
+      "W_fifo_sim_s": 0.0124,
+      "malignant_wait_reduction_pct_sim": 9.5,
+      "missed_over_fifo_sim": 1.269
+     },
+     {
+      "rho": 0.5,
+      "promoted_fraction": 0.6856,
+      "W_promoted_theory_s": 0.0221,
+      "W_notpromoted_theory_s": 0.0442,
+      "W_fifo_theory_s": 0.0291,
+      "W_malignant_theory_s": 0.0235,
+      "malignant_wait_reduction_pct_theory": 19.1,
+      "W_malignant_sim_s": 0.0234,
+      "W_missed_malignant_sim_s": 0.0447,
+      "W_fifo_sim_s": 0.0288,
+      "malignant_wait_reduction_pct_sim": 18.9,
+      "missed_over_fifo_sim": 1.551
+     },
+     {
+      "rho": 0.7,
+      "promoted_fraction": 0.6856,
+      "W_promoted_theory_s": 0.0391,
+      "W_notpromoted_theory_s": 0.1304,
+      "W_fifo_theory_s": 0.0678,
+      "W_malignant_theory_s": 0.0449,
+      "malignant_wait_reduction_pct_theory": 33.7,
+      "W_malignant_sim_s": 0.0443,
+      "W_missed_malignant_sim_s": 0.1283,
+      "W_fifo_sim_s": 0.0681,
+      "malignant_wait_reduction_pct_sim": 34.9,
+      "missed_over_fifo_sim": 1.883
+     },
+     {
+      "rho": 0.9,
+      "promoted_fraction": 0.6856,
+      "W_promoted_theory_s": 0.0683,
+      "W_notpromoted_theory_s": 0.6829,
+      "W_fifo_theory_s": 0.2615,
+      "W_malignant_theory_s": 0.1075,
+      "malignant_wait_reduction_pct_theory": 58.9,
+      "W_malignant_sim_s": 0.11,
+      "W_missed_malignant_sim_s": 0.711,
+      "W_fifo_sim_s": 0.2621,
+      "malignant_wait_reduction_pct_sim": 58.0,
+      "missed_over_fifo_sim": 2.713
+     }
+    ]
+   }
+  }
+ }
+}

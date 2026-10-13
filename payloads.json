@@ -1,0 +1,19 @@
+{
+ "payloads": {
+  "recommended_hyperprior_actual": 3632,
+  "factorized_l0.01_actual": 4989,
+  "jpeg_q20": 4639,
+  "jpeg_q30": 5881,
+  "residual_ae_49KB": 50184,
+  "original_png_mean": 537395
+ },
+ "queue_payload": "recommended_hyperprior_actual",
+ "notes": {
+  "recommended_hyperprior_actual": "scale-hyperprior lambda=0.01, mean actual range-coded bytes over its 400-image evaluation set (actual_bitstream_results.json, r4_actual_bitstream.py; round trip lossless); entropy-model estimate was 3,643 B",
+  "factorized_l0.01_actual": "factorized-prior lambda=0.01, mean actual range-coded bytes over its 400-image evaluation set (actual_bitstream_results.json); entropy-model estimate was 4,996 B",
+  "jpeg_q20": "actual bytes (compression_comparison.json)",
+  "jpeg_q30": "actual bytes (compression_comparison.json)",
+  "residual_ae_49KB": "float16 residual-autoencoder latent, the payload of the original network/queue analyses (compression_results.json)",
+  "original_png_mean": "mean original PNG, 524.8 KB (network_results.json)"
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "note": "proposed source classifier re-trained per official split with fixed seeds; every held-out prediction saved",
+ "seed": 42,
+ "epochs": 25,
+ "quick": false,
+ "n_predictions": 13665,
+ "n_patients": 68,
+ "field_argmax": {
+  "n": 13665,
+  "acc": 0.8757,
+  "sens": 0.9191,
+  "spec": 0.7878,
+  "auc": 0.9459,
+  "tp": 8410,
+  "tn": 3557,
+  "fp": 958,
+  "fn": 740
+ },
+ "field_score": {
+  "n": 13665,
+  "acc": 0.8771,
+  "sens": 0.9211,
+  "spec": 0.788,
+  "auc": 0.9459,
+  "tp": 8428,
+  "tn": 3558,
+  "fp": 957,
+  "fn": 722
+ },
+ "field_ci95_cluster_argmax_note": "field-level CIs below resample patients (cluster bootstrap), score >= 0.5 rule",
+ "field_ci95_cluster": {
+  "acc": [
+   0.8331,
+   0.919
+  ],
+  "sens": [
+   0.8704,
+   0.965
+  ],
+  "spec": [
+   0.7071,
+   0.8649
+  ],
+  "auc": [
+   0.9153,
+   0.9721
+  ]
+ },
+ "patient": {
+  "n": 68,
+  "acc": 0.9412,
+  "sens": 0.9574,
+  "spec": 0.9048,
+  "auc": 0.9909,
+  "tp": 45,
+  "tn": 19,
+  "fp": 2,
+  "fn": 2
+ },
+ "patient_ci95": {
+  "acc": [
+   0.8824,
+   0.9853
+  ],
+  "sens": [
+   0.8909,
+   1.0
+  ],
+  "spec": [
+   0.7619,
+   1.0
+  ],
+  "auc": [
+   0.9733,
+   1.0
+  ]
+ },
+ "per_split_field_argmax": {
+  "1": {
+   "n": 2904,
+   "acc": 0.8939,
+   "sens": 0.9631,
+   "spec": 0.7639,
+   "auc": 0.9644,
+   "tp": 1826,
+   "tn": 770,
+   "fp": 238,
+   "fn": 70,
+   "acc8": 0.5289,
+   "macro_f1": 0.3529
+  },
+  "2": {
+   "n": 2403,
+   "acc": 0.831,
+   "sens": 0.8362,
+   "spec": 0.8191,
+   "auc": 0.9153,
+   "tp": 1404,
+   "tn": 593,
+   "fp": 131,
+   "fn": 275,
+   "acc8": 0.501,
+   "macro_f1": 0.3412
+  },
+  "3": {
+   "n": 2577,
+   "acc": 0.8816,
+   "sens": 0.9211,
+   "spec": 0.7905,
+   "auc": 0.9494,
+   "tp": 1657,
+   "tn": 615,
+   "fp": 163,
+   "fn": 142,
+   "acc8": 0.4959,
+   "macro_f1": 0.338
+  },
+  "4": {
+   "n": 2698,
+   "acc": 0.8569,
+   "sens": 0.8905,
+   "spec": 0.7936,
+   "auc": 0.9391,
+   "tp": 1570,
+   "tn": 742,
+   "fp": 193,
+   "fn": 193,
+   "acc8": 0.4615,
+   "macro_f1": 0.3653
+  },
+  "5": {
+   "n": 3083,
+   "acc": 0.905,
+   "sens": 0.9702,
+   "spec": 0.7822,
+   "auc": 0.9667,
+   "tp": 1953,
+   "tn": 837,
+   "fp": 233,
+   "fn": 60,
+   "acc8": 0.4716,
+   "macro_f1": 0.3838
+  }
+ },
+ "per_split_summary": {
+  "acc8": {
+   "mean": 0.49178,
+   "sd": 0.02368116551185773
+  },
+  "macro_f1": {
+   "mean": 0.35624,
+   "sd": 0.016802928316219157
+  },
+  "acc": {
+   "mean": 0.87368,
+   "sd": 0.02666708832999961
+  },
+  "auc": {
+   "mean": 0.9469800000000002,
+   "sd": 0.018782481199245218
+  },
+  "sens": {
+   "mean": 0.91622,
+   "sd": 0.04939657478003912
+  },
+  "spec": {
+   "mean": 0.78986,
+   "sd": 0.017899564240505976
+  }
+ }
+}

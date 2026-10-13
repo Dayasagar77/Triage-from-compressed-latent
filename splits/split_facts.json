@@ -1,0 +1,56 @@
+{
+ "test_appearances": {
+  "0": 13,
+  "1": 21,
+  "2": 30,
+  "3": 13,
+  "4": 5
+ },
+ "never_tested": [
+  "SOB_B_F_14-14134",
+  "SOB_B_F_14-25197",
+  "SOB_B_TA_14-13200",
+  "SOB_M_DC_14-11031",
+  "SOB_M_DC_14-14926",
+  "SOB_M_DC_14-15572",
+  "SOB_M_DC_14-16336",
+  "SOB_M_DC_14-16875",
+  "SOB_M_DC_14-2773",
+  "SOB_M_DC_14-5695",
+  "SOB_M_MC_14-10147",
+  "SOB_M_MC_14-18842",
+  "SOB_M_PC_14-12465"
+ ],
+ "cross_split_id": [
+  {
+   "fold": 1,
+   "patient_id": "13412",
+   "test": [
+    "SOB_M_LC_14-13412"
+   ],
+   "train": [
+    "SOB_M_DC_14-13412"
+   ]
+  },
+  {
+   "fold": 3,
+   "patient_id": "13412",
+   "test": [
+    "SOB_M_DC_14-13412"
+   ],
+   "train": [
+    "SOB_M_LC_14-13412"
+   ]
+  },
+  {
+   "fold": 5,
+   "patient_id": "13412",
+   "test": [
+    "SOB_M_DC_14-13412"
+   ],
+   "train": [
+    "SOB_M_LC_14-13412"
+   ]
+  }
+ ]
+}

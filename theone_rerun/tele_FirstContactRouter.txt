@@ -1,0 +1,70 @@
+## Rural telepathology DTN scenario for Table 12 (re-run with every setting stated; revision R4).
+## One clinic (host 0), twenty relays (hosts 1-20), one diagnostic centre (host 21).
+## Settings not stated here come from The ONE's default_settings.txt (commit c973bfb); group-specific
+## defaults that would otherwise leak into groups 1-3 (e.g. Group2.speed) are overridden explicitly.
+Scenario.name = tele_%%Group.router%%_seed%%MovementModel.rngSeed%%
+Scenario.simulateConnections = true
+Scenario.updateInterval = 1.0
+Scenario.endTime = 43200
+
+btInterface.type = SimpleBroadcastInterface
+btInterface.transmitSpeed = 250k
+btInterface.transmitRange = 150
+
+Scenario.nrofHostGroups = 3
+Group.movementModel = RandomWaypoint
+Group.bufferSize = 50M
+Group.waitTime = 0, 120
+Group.nrofInterfaces = 1
+Group.interface1 = btInterface
+Group.speed = 0.5, 1.5
+Group.msgTtl = 720
+
+Group1.groupID = clinic
+Group1.nrofHosts = 1
+Group1.movementModel = RandomWaypoint
+Group1.speed = 0.5, 1.5
+Group1.bufferSize = 50M
+Group1.waitTime = 0, 120
+Group1.nrofInterfaces = 1
+Group1.interface1 = btInterface
+
+Group2.groupID = relay
+Group2.nrofHosts = 20
+Group2.movementModel = RandomWaypoint
+Group2.speed = 0.5, 1.5
+Group2.bufferSize = 50M
+Group2.waitTime = 0, 120
+Group2.nrofInterfaces = 1
+Group2.interface1 = btInterface
+
+Group3.groupID = centre
+Group3.nrofHosts = 1
+Group3.movementModel = RandomWaypoint
+Group3.speed = 0.5, 1.5
+Group3.bufferSize = 50M
+Group3.waitTime = 0, 120
+Group3.nrofInterfaces = 1
+Group3.interface1 = btInterface
+
+Events.nrof = 1
+Events1.class = MessageEventGenerator
+Events1.interval = 60, 120
+Events1.size = 49k
+Events1.hosts = 0, 0
+Events1.tohosts = 21, 21
+Events1.prefix = M
+
+MovementModel.rngSeed = [1; 2; 3; 4; 5]
+MovementModel.worldSize = 1000, 1000
+MovementModel.warmup = 1000
+
+Report.nrofReports = 1
+Report.warmup = 0
+Report.reportDir = reports/
+Report.report1 = MessageStatsReport
+
+ProphetRouter.secondsInTimeUnit = 30
+Optimization.cellSizeMult = 5
+Optimization.randomizeUpdateOrder = true
+Group.router = FirstContactRouter

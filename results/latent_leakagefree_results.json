@@ -1,0 +1,21 @@
+{
+  "note": "codec retrained per fold on train patients only -> fully patient-wise latent triage",
+  "seed": 42,
+  "lmbda": 0.01,
+  "codec_epochs": 40,
+  "quick": false,
+  "n_patches": 13665,
+  "n_patients": 68,
+  "patch_level": {
+    "acc": 0.8249,
+    "sens": 0.8909,
+    "spec": 0.691,
+    "auc": 0.8838
+  },
+  "patient_level": {
+    "acc": 0.8971,
+    "sens": 0.9149,
+    "spec": 0.8571,
+    "auc": 0.9645
+  }
+}

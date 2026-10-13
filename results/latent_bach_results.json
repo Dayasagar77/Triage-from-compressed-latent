@@ -1,0 +1,16 @@
+{
+  "dataset": "BACH ICIAR-2018 (external, LATENT triage, inference only)",
+  "n": 400,
+  "codec": "FactorizedCodec l0.01",
+  "binary_accuracy": 0.5175,
+  "sensitivity": 0.89,
+  "specificity": 0.145,
+  "auc": 0.5787,
+  "confusion": {
+    "tp": 178,
+    "tn": 29,
+    "fp": 171,
+    "fn": 22
+  },
+  "note": "latent head trained on BreakHis latents only; BACH unseen by codec and head"
+}

@@ -1,0 +1,101 @@
+{
+  "rows": [
+    {
+      "representation": "Factorized-prior bitstream (triage code)",
+      "bytes_per_field": 4988.75,
+      "kib_per_field": 4.872,
+      "ssim": 0.8592,
+      "size_kind": "actual range-coded bytes, Set F",
+      "case10_s_at_64 kb/s": 6.236,
+      "case10_s_at_500 kb/s": 0.798,
+      "case96_s_at_64 kb/s": 59.865,
+      "case96_s_at_500 kb/s": 7.663
+    },
+    {
+      "representation": "Scale-hyperprior bitstream",
+      "bytes_per_field": 3631.56,
+      "kib_per_field": 3.546,
+      "ssim": 0.9003,
+      "size_kind": "actual range-coded bytes, Set H",
+      "case10_s_at_64 kb/s": 4.539,
+      "case10_s_at_500 kb/s": 0.581,
+      "case96_s_at_64 kb/s": 43.579,
+      "case96_s_at_500 kb/s": 5.578
+    },
+    {
+      "representation": "JPEG, quality 20",
+      "bytes_per_field": 4638.7,
+      "kib_per_field": 4.53,
+      "ssim": 0.8768,
+      "size_kind": "actual bytes, Set F",
+      "case10_s_at_64 kb/s": 5.798,
+      "case10_s_at_500 kb/s": 0.742,
+      "case96_s_at_64 kb/s": 55.664,
+      "case96_s_at_500 kb/s": 7.125
+    },
+    {
+      "representation": "JPEG, quality 30",
+      "bytes_per_field": 5881.4,
+      "kib_per_field": 5.744,
+      "ssim": 0.9115,
+      "size_kind": "actual bytes, Set F",
+      "case10_s_at_64 kb/s": 7.352,
+      "case10_s_at_500 kb/s": 0.941,
+      "case96_s_at_64 kb/s": 70.577,
+      "case96_s_at_500 kb/s": 9.034
+    },
+    {
+      "representation": "JPEG2000, ratio 40",
+      "bytes_per_field": 3721.6,
+      "kib_per_field": 3.634,
+      "ssim": 0.7561,
+      "size_kind": "actual bytes, Set F",
+      "case10_s_at_64 kb/s": 4.652,
+      "case10_s_at_500 kb/s": 0.595,
+      "case96_s_at_64 kb/s": 44.659,
+      "case96_s_at_500 kb/s": 5.716
+    },
+    {
+      "representation": "Residual-autoencoder latent (49 KB payload)",
+      "bytes_per_field": 50184.0,
+      "kib_per_field": 49.008,
+      "ssim": 0.9794,
+      "size_kind": "actual bytes (fixed size), Set F",
+      "case10_s_at_64 kb/s": 62.73,
+      "case10_s_at_500 kb/s": 8.029,
+      "case96_s_at_64 kb/s": 602.208,
+      "case96_s_at_500 kb/s": 77.083
+    },
+    {
+      "representation": "JPEG at equal SSIM",
+      "bytes_per_field": 14714.26,
+      "kib_per_field": 14.369,
+      "ssim": 0.9794,
+      "size_kind": "interpolated (0.9622, 10376.3, 0.9801, 14890.8)",
+      "case10_s_at_64 kb/s": 18.393,
+      "case10_s_at_500 kb/s": 2.354,
+      "case96_s_at_64 kb/s": 176.571,
+      "case96_s_at_500 kb/s": 22.601
+    },
+    {
+      "representation": "JPEG2000 at equal SSIM",
+      "bytes_per_field": 29165.25,
+      "kib_per_field": 28.482,
+      "ssim": 0.9794,
+      "size_kind": "interpolated (0.9377, 14983.1, 0.9819, 30015.5)",
+      "case10_s_at_64 kb/s": 36.457,
+      "case10_s_at_500 kb/s": 4.666,
+      "case96_s_at_64 kb/s": 349.983,
+      "case96_s_at_500 kb/s": 44.798
+    }
+  ],
+  "summary": {
+    "case96_jpeg_s_at_64": 70.577,
+    "case96_saving_latent_vs_jpeg_s_at_64": 10.712,
+    "case96_saving_latent_vs_jpeg_s_at_500": 1.371,
+    "case10_saving_latent_vs_jpeg_s_at_64": 1.116,
+    "payload_over_jpeg_equal_ssim": 3.41,
+    "payload_over_jpeg2000_equal_ssim": 1.72,
+    "int8_payload_over_jpeg_equal_ssim": 1.71
+  }
+}
